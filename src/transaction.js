@@ -1172,7 +1172,7 @@ Transaction.prototype.__toBuffer = function (buffer, initialOffset, __allowWitne
 
   // avoid slicing unless necessary
   if (initialOffset !== undefined) return buffer.slice(initialOffset, offset)
-  // TODO (https://github.com/BitGo/bitgo-utxo-lib/issues/11): we shouldn't have to slice the final buffer
+  // TODO (https://github.com/daemonfox/bitgo-utxo-lib/issues/11): we shouldn't have to slice the final buffer
   return buffer.slice(0, offset)
 }
 
